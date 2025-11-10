@@ -4,7 +4,6 @@ import { ArrowButton } from 'src/ui/arrow-button';
 import { Button } from 'src/ui/button';
 import { Select } from 'src/ui/select';
 import { RadioGroup } from 'src/ui/radio-group';
-// import { Separator } from 'src/ui/separator';
 import { Text } from 'src/ui/text';
 import {
 	ArticleStateType,
@@ -46,7 +45,6 @@ export const ArticleParamsForm = ({
 		if (isOpen) {
 			setFormState(appliedState);
 		}
-		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [isOpen]);
 
 	const handleToggleSidebar = () => {
