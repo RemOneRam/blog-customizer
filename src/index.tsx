@@ -19,11 +19,11 @@ const App = () => {
 	const [appliedState, setAppliedState] =
 		useState<ArticleStateType>(defaultArticleState);
 
-	const handleApply = (newState: ArticleStateType) => {
+	const handleApplyArticleParams = (newState: ArticleStateType) => {
 		setAppliedState(newState);
 	};
 
-	const handleReset = () => {
+	const handleResetArticleParams = () => {
 		setAppliedState(defaultArticleState);
 	};
 
@@ -40,8 +40,8 @@ const App = () => {
 				} as CSSProperties
 			}>
 			<ArticleParamsForm
-				onApply={handleApply}
-				onReset={handleReset}
+				onApplyParams={handleApplyArticleParams}
+				onResetParams={handleResetArticleParams}
 				initialState={defaultArticleState}
 				appliedState={appliedState}
 			/>
